@@ -1,0 +1,14 @@
+.collapse-card{
+  .card-body{
+    overflow: hidden;
+  	max-height: 20em;
+  	overflow: hidden;
+  	transition: max-height 0.8s;
+  }
+}
+
+.collapse-card.is-collapsed{
+  .card-body {
+    max-height: 0;
+  }
+}

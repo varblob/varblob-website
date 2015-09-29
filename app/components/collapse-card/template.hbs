@@ -1,8 +1,6 @@
 <div class="card-heading clickable" {{action "collapse"}}>
   <div class="card-title">{{#if isCollapsed}}{{fa-icon "plus-square-o"}}{{else}}{{fa-icon "minus-square-o"}}{{/if}} {{title}}</div>
 </div>
-{{#unless isCollapsed}}
 <div class="card-body">
   {{yield}}
 </div>
-{{/unless}}
