@@ -261,7 +261,7 @@
                   title="Design"}}
                   <ul>
                     <li>
-                      Designer on a several original social games
+                      Designer on several original social games
                     </li>
                   </ul>
                 {{/collapse-card}}
@@ -330,17 +330,9 @@
     <section clas="liked">
       <h2>{{fa-icon "thumbs-o-up fw"}} Some Random Things I Like</h2>
       <div class="posts">
-        <div class="g-post" data-href="https://plus.google.com/+AnthonyLee0/posts/KfSCuAsTyWZ"></div>
-        <div class="g-post" data-href="https://plus.google.com/+AnthonyLee0/posts/5cJo995QtjT"></div>
-        <div class="g-post" data-href="https://plus.google.com/+AnthonyLee0/posts/bWmR1MrHZrF"></div>
-        <div class="g-post" data-href="https://plus.google.com/+AnthonyLee0/posts/6KUKezJ2vYp"></div>
-        <div class="g-post" data-href="https://plus.google.com/+AnthonyLee0/posts/GayUkvgE6wp"></div>
-        <div class="g-post" data-href="https://plus.google.com/+AnthonyLee0/posts/E7uhiiPScoy"></div>
-        <div class="g-post" data-href="https://plus.google.com/+AnthonyLee0/posts/UdTtJdejGQW"></div>
-        <div class="g-post" data-href="https://plus.google.com/+AnthonyLee0/posts/SxtSQ55nu5E"></div>
-        <div class="g-post" data-href="https://plus.google.com/+AnthonyLee0/posts/GwMjofT1xzd"></div>
-        <div class="g-post" data-href="https://plus.google.com/+AnthonyLee0/posts/NsYpt5rk7Rj"></div>
-        <div class="g-post" data-href="https://plus.google.com/+AnthonyLee0/posts/LTwgbtDyWbx"></div>
+        {{#each posts as |postId|}}
+          {{g-post postId=postId}}
+        {{/each}}
       </div>
     </section>
   </div>
