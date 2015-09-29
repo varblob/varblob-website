@@ -1,0 +1,71 @@
+.me {
+  text-align: center;
+  padding: 1em 0;
+  img{
+    border-radius: 50%;
+    border: 10px solid rgba(85, 85, 85, 0.1);
+  }
+}
+
+.label-default {
+  background: transparent;
+  border: 1px solid gray;
+  color: black;
+}
+.card.no-padding{
+  .card-body{
+    padding: 0 0 0 1em;
+    margin-bottom: 1em;
+  }
+  ul{
+    padding: 0 0 0 1em;
+  }
+}
+
+.label-list{
+  margin-top: 0.5em;
+}
+
+.details{
+  margin-left: 1em;
+}
+
+
+.position {
+  margin-bottom: 3em;
+}
+
+.spacer {
+  border: 1px solid gray;
+  border-style: solid none;
+  padding: 0.2em;
+  margin: 1em 0;
+}
+
+.cv.spacer{
+  margin: 5em 0;
+}
+
+.cover-letter{
+  .content{
+    margin-top: 1.5em;
+  }
+}
+
+section {
+  margin: 1em;
+}
+
+.posts > div{
+  vertical-align: top !important;
+  margin: 0.3em 0;
+}
+
+.posts{
+  margin: 3em 2em 2em;
+}
+//
+// .is-collapsed.card .card-heading .card-title{
+//   font-weight: normal;
+//   font-size: 130%;
+// }

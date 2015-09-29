@@ -1,0 +1,38 @@
+.card{
+  margin: 1em;
+  background: white;
+  border: 1px solid #CCC;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),0 1px 5px 0 rgba(0, 0, 0, 0.12),0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  .card-body{
+    padding: 1em;
+  }
+
+  .card-heading{
+    padding: 1em;
+    .card-title{
+      font-size: 130%;
+    }
+  }
+}
+
+.card.no-border{
+  border: none;
+}
+
+.card.flat{
+  box-shadow: none;
+}
+
+.card.no-margin{
+  margin: 0;
+}
+
+.card.no-padding{
+  .card-body {
+    padding: 1em 0 0;
+  }
+  .card-heading{
+    padding: 0 0 1em;
+  }
+}

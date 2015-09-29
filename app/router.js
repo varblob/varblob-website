@@ -6,6 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('job-app', function() {
+    this.route('knewton');
+  });
 });
 
 export default Router;
