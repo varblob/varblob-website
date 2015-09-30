@@ -1,0 +1,11 @@
+<h3>{{title}}</h3>
+{{#if institution}}
+<abr title="At">{{fa-icon "at fa-fw"}}</abr> {{institution}}
+{{/if}}
+{{#if location}}
+<div><abr title="Location">{{fa-icon "map-marker fa-fw"}}</abr> {{location}}</div>
+{{/if}}
+{{#if dates}}
+<div><abr title="Dates">{{fa-icon "calendar fa-fw"}}</abr> {{dates}}</div>
+{{/if}}
+{{yield}}
