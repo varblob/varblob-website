@@ -1,8 +1,14 @@
 <div class="row">
   <div class="col-sm-12 col-md-3">
-    <h2>{{#if icon}}{{fa-icon icon}} {{/if}}{{title}}</h2>
+    <h2>{{#if section.icon}}{{fa-icon section.icon}} {{/if}}{{section.title}}</h2>
   </div>
   <div class="col-sm-12 col-md-9">
-    {{yield}}
+    {{#if section.content}}
+      <div class="content">
+        {{#each section.content as |content|}}
+          {{v-content content=content}}
+        {{/each}}
+      </div>
+    {{/if}}
   </div>
 </div>

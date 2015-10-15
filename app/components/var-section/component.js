@@ -4,6 +4,5 @@ export default Ember.Component.extend({
   tagName: 'section',
   classNames: ['container-fluid'],
   classNameBindings: ['title'],
-  title: null,
-  icon: null
+  section: null
 });

@@ -17,127 +17,26 @@
       </div>
     </div>
   </div>
-
   <div class="cover-letter">
-    {{#var-section
-      title="Why Knewton"
-      icon="question fa-fw"}}
-      <div class="content">
-        {{#collapse-card isCollapsed=true
-          title="Digital education is the future of education"}}
-          With estimates of the world population growing by another two billion in Asia and Africa by 2050, there is simply not enough educational infrastructure to provide education to everyone. We need the scalability of digital educational systems. Even without population growth, only  about 40% of the world population has access to internet. As this moves towards 100%, there will be an inevitable increase in demand for digital educational resources.
-        {{/collapse-card}}
-      </div>
-    {{/var-section}}
-
-    {{#var-section
-      title="Requirements"
-      icon="check fa-fw"}}
-      <div class="content">
-        {{#collapse-card isCollapsed=true
-          title="I've designed and built many complex products"}}
-          <ul>
-            <li>
-              Human Resource Information System
-            </li>
-            <li>
-              Applicant Tracking System
-            </li>
-            <li>
-              Performance review design and delivery system
-            </li>
-            <li>
-              Widget based custom reporting system for HR data with Boolean search operators for sub selecting people
-            </li>
-            <li>
-              Web based psychometric assessment and custom survey application processing tens of thousands of candidates
-            </li>
-            <li>
-              Applicant assessment application for Windows Phone
-            </li>
-            <li>
-              Spatial aptitude game
-            </li>
-            <li>
-              Finance Quiz game for IPhone
-            </li>
-            <li>
-              Real Time Trading game designed to select high potential traders
-            </li>
-            <li>
-              Lead generation and auto follow up mailing system for sales
-            </li>
-            <li>
-              Several social games
-            </li>
-            <li>
-              Numerous Ad and Casual Games
-            </li>
-          </ul>
-        {{/collapse-card}}
-        {{#collapse-card isCollapsed=true
-          title="I've worked in agile environments"}}
-          <ul>
-            <li>Pragmatic test driven development for both the client and server</li>
-            <li>Weekly builds</li>
-            <li>Daily standup meetings</li>
-            <li>Iterative design</li>
-          </ul>
-        {{/collapse-card}}
-        {{#collapse-card isCollapsed=true
-          title="I’m experienced with analytics driven decision making"}}
-          I did a fair amount of stats work at ConnectCubed when designing and analyzing performance and hiring statistics for our clients. At HitPoint studios, I built and was in charge of a tracking system for our games. As a project manager and game designer, I would use these tools to optimize micro transactions or client specified desired user interactions for ad games.
-        {{/collapse-card}}
-        {{#collapse-card isCollapsed=true
-          title="I'm entrepreneurial"}}
-          I co-founded a company and ran it for 4 years. I was also one of the first hires at HitPoint Studios.  I've pulled an all nighter after a 24 hour flight from Hong Kong and a 6 hour bus ride from the airport to the office because we needed to get things done.
-        {{/collapse-card}}
-      </div>
-    {{/var-section}}
-
-    {{#var-section
-      title="Being Different"
-      icon="adjust fa-fw"}}
-      <div class="content">
-        {{#collapse-card isCollapsed=true
-          title="I've played many roles"}}
-          <ul>
-            <li>project manager</li>
-            <li>ui designer</li>
-            <li>server coder</li>
-            <li>server infrastructure guy</li>
-            <li>client side coder</li>
-            <li>graphic designer</li>
-            <li>sales funnel optimizer</li>
-            <li>marketing message optimizer</li>
-            <li>data scientist</li>
-            <li>psychometrician</li>
-            <li>game designer</li>
-          </ul>
-          Having experience in all these different roles gives me a wide net of tools to pull from for product development ideas. It also gives me the ability to relate to and understand a diverse array of team members and the problems they will need to solve.
-        {{/collapse-card}}
-        {{#collapse-card isCollapsed=true
-          title="I have deep insight into hiring and performance assessment practices"}}
-        ConnectCubed, the startup I co-founded, was focused on human resources, specifically performance, hiring, and analytics. The reality is pretty bleak; the current tools for predicting employee success (personality, aptitude, interviews, grades, skills, etc.) are simply not that good at predicting. They all suffer from the common problem of snapshotting through a keyhole. Each assessment captures only a very narrow moment in time, through a very narrow window of data. The future of job placement and advancement is likely to be educational systems that gather rich longitudinal data.
-        {{/collapse-card}}
-        {{#collapse-card isCollapsed=true
-          title="I understand the power of game mechanics and want to use it for good"}}
-        I left my job at HitPoint Studios because I saw the power of game mechanics and didn't want to apply it to ad games. I wanted to utilize the power of games and game mechanics to contribute to society. I still believe this is possible, and I think that knowledge of game mechanics, even if expressed subtly, is extremely helpful for any product, but especially in education.
-        {{/collapse-card}}
-      </div>
-    {{/var-section}}
+    {{#each cover.sections as |section|}}
+      {{var-section section=section}}
+    {{/each}}
   </div>
   <div class="spacer big">
   </div>
-  {{var-resume}}
+  <div class="resume">
+    {{#each resume.sections as |section|}}
+      {{var-section section=section}}
+    {{/each}}
+  </div>
   <div class="spacer big">
   </div>
   <section class="liked">
     <h2>{{fa-icon "thumbs-o-up fw"}} Some Random Things I Like</h2>
     <div class="posts">
-      {{#each posts as |postId|}}
+      {{!-- {{#each posts as |postId|}}
         {{g-post postId=postId}}
-      {{/each}}
+      {{/each}} --}}
     </div>
   </section>
 </div>

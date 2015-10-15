@@ -1,5 +1,5 @@
 <h3>{{position.title}}</h3>
-{{#if institution}}
+{{#if position.institution}}
 <abr title="At">{{fa-icon "at fa-fw"}}</abr> {{position.institution}}
 {{/if}}
 {{#if position.location}}
@@ -9,10 +9,10 @@
 <div><abr title="Dates">{{fa-icon "calendar fa-fw"}}</abr> {{position.dates}}</div>
 {{/if}}
 {{#if position.details}}
-  <br>
-  <ul class="details list-unstyled">
-    {{#each position.details as |detail|}}
-      <li>{{var-detail detail=detail}}</li>
+  <div class="details">
+    <br>
+    {{#each position.details as |item|}}
+      {{v-content content=item}}
     {{/each}}
-  </ul>
+  </div>
 {{/if}}

@@ -1,0 +1,23 @@
+projects:
+  - title: Kinect interpretive dance
+    abstract: |
+      Allow the dancers to generate music through their actual dance movements.
+    inspiration:
+      see:
+        - title: illuminate dance
+          comments: |
+            Rigging dancers with lights could be a lower cost solution to generating interesting visuals as compared to setting up holographic projection though I haven't done the costing.
+        - title: Quixotic Fusion
+          comments: |
+            The 3d interactive aspect of holographic projection removes the need for a physical object o be present in the 3d space.
+      hear:
+        - title: beatjazz by onyx ashanti
+          media:
+            - https://www.youtube.com/watch?v=8bJsxIeg5iQ
+          comments: |
+            Using the accelerometer to generate sound is a good start to body movements creating music but the dance movements allowed are too rigid to give a dancer enough freedom of expression in their movements.  I also want to move the control of individual button presses to the ensemble level as opposed to the individual level.
+    challenges:
+      - problem: How to give dancers enough freedom of movement whilst also having enough control to generate improvised music.
+        solutions:
+          - 
+      - problem: How to

@@ -1,0 +1,16 @@
+<ul class="list-unstyled">
+  {{#each content.data as |item|}}
+    <li>
+      {{#collapse-card isCollapsed=true
+        title=item.title}}
+        {{#if item.more.push}}
+          {{#each item.more as |content|}}
+            {{v-content content=content}}
+          {{/each}}
+        {{else}}
+          {{item.more}}
+        {{/if}}
+      {{/collapse-card}}
+    </li>
+  {{/each}}
+</ul>

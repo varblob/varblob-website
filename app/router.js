@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('job-app', function() {
     this.route('knewton');
   });
+  this.route('cv');
 });
 
 export default Router;

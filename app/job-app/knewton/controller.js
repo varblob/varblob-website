@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
-const { Controller } = Ember;
+const { Controller, computed } = Ember;
+const { alias } = computed;
 
 export default Controller.extend({
   posts: [
@@ -15,5 +16,7 @@ export default Controller.extend({
     'GwMjofT1xzd',
     'NsYpt5rk7Rj',
     'LTwgbtDyWbx'
-  ]
+  ],
+  resume: alias('model.resume'),
+  cover: alias('model.cover')
 });
