@@ -1,4 +1,5 @@
 Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /
-RewriteRule ^(^(imgs|assets|data)) index.html [L]
+RewriteRule [\.] - [L]
+RewriteRule ^ index.html [L]
