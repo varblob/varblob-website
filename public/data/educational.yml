@@ -1,0 +1,10 @@
+- title: Open Education Platform
+  problem:
+    - online courses are not editable after they are created.
+    - users can't create new versions of course / mix and match course material together
+    - course format discourages users from moving through freely.  Course flow is lockstep.
+  solution:
+    - use git as a model for creating courses, closed and public
+    - each course composed of small pieces that can be remixed
+    - components are predefined or custom modules
+    -

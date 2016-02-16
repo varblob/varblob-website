@@ -18,7 +18,6 @@ sections:
                       - Lead the company through a major technical shift from Rails views with YUI to a Rails API with an Ember.js single page application
                       - Managed technical debt and minimized the impact of 3 major product pivots over the course of 4 years
                       - Put together and ran a small production team to develop various applications
-                      - Instituted iterative development practices, weekly builds, with daily standup meetings
                       - Enforced pragmatic test driven development on both server and client
               - title: Product Design
                 more:
@@ -32,7 +31,7 @@ sections:
                 more:
                   - type: list
                     data:
-                      - Built multiple single page web apps in Ember and YUI
+                      - Lead dev of multiple single page web apps in Ember and YUI
                       - Developed the private and public server api in Rails
                       - Implemented Windows Phone app and IPhone app versions of our product
                       - Engineered realtime finance trading game in Flash
